@@ -29,9 +29,7 @@ functions:
 
 ## tests
 
-## UI - css coins?
+## UI - css coins as result?
 
-have all the UI interaction separate
-
-need to test this too
+have all the UI interaction as separate JS object - need to test this too
 

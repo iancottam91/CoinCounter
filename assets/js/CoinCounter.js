@@ -18,7 +18,38 @@ function CoinCounter () {
 
     validateInput : function(input){
 
-      return false;
+    	var valid;
+
+    	// 0 or 1 £ at the start £{0,1}
+    	// follow by 1 or more of 0 to 9 [0-9]+
+    	// follow by 0 or 1 of \.{0,1}
+    	
+    	// followed by 1 or more of 0 to 9 [0-9]+ ((NEED TO SPECIFY THIS IS ONLY IF THERE IS A DOT))
+    	// followed by 0 or 1 of p p{0,1} ((THIS IS NOT ALLOW IF THERE IS A £ AND NO .))
+
+    	var re = /^£{0,1}[0-9]+\.{0,1}[0-9]+p{0,1}$/i;
+      // test the above first
+    	// - if it's false - check if it's £1, 1 or 1p and if it is pass it
+    	// - if it's true and it has a £ and a p it needs a NO . fail it
+    	var regexTest = re.test(input);
+
+    	valid = regexTest;
+
+    	// - if it's false - check if it's £x, x or xp and if it is, pass it
+    	if(!valid){
+    		var reOneDigit = /^£{0,1}[0-9]p{0,1}$/;
+    		valid = reOneDigit.test(input);
+    	}
+
+    	// - if it's true and it has a £ and a p and NO . fail it
+    	if(valid){
+    		var rePoundPNoDot = /^£{1}[0-9]+p{1}$/;
+    		if(rePoundPNoDot.test(input)){
+    			valid = false;
+    		}
+    	}
+
+      return valid;
 
     },
 
