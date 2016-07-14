@@ -31,3 +31,7 @@ functions:
 
 ## UI - css coins?
 
+have all the UI interaction separate
+
+need to test this too
+
