@@ -1,0 +1,17 @@
+{
+  "name": "Coin-Counter",
+  "version": "1.0.0",
+  "description": "An app to calculate the minimum number of British coins needed to make a given total",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "'Ian <'icottam@msn.com'>",
+  "license": "'MIT'",
+  "dependencies": {
+    "express": "4.13.4"
+  },
+  "engines": {
+    "node": "4.1.1"
+  }
+}
