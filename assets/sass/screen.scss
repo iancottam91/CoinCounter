@@ -1,0 +1,79 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+$h1-font-size: 36px;
+$font-size-body: 16px;
+$font-color: #202020;
+
+*{
+  box-sizing: border-box;
+}
+
+@import "compass/reset";
+@import "typography";
+@import "coins";
+@import "framework";
+
+// bootstrap mixins for grid
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+body{
+  background: #ddd;
+}
+
+.interact{
+  background: #6d595f;
+  padding: 60px 80px 60px;
+  h1{
+    color: white;
+    text-align: center;
+    span{
+      padding: 20px 30px;
+      line-height: 36px;
+      border: 2px solid white;
+      border-radius: 5px;
+      display: inline-block;      
+    }    
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+#calculate-coins-form, #input-error{
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#coin-containers{
+  margin-top: 40px;
+  > div {
+    height: 100px;
+    text-align: center;
+    @include make-sm-column(4);
+    @include make-md-column(4);
+  }
+}
+
+.coin-details{
+  display: inline-block;
+  font-size: 30px;
+  vertical-align: bottom;
+  margin-bottom: 34px;
+  margin-left: 23px;
+}
+.coin-details-large{
+  margin-bottom: 44px;
+  margin-left: 5px;
+}
+.coin-details-small{
+  margin-bottom: 26px;
+  margin-left: 34px;
+}
+#input-error{
+  color: #ffe100;
+}

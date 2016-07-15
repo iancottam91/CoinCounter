@@ -1,0 +1,46 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-size: $h1-font-size;
+  margin-bottom: 20px;
+}
+
+input[type="text"]{
+  height: 43px;
+  text-indent: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: top;
+  border: 0;
+  margin-right: 10px;
+  font-size: 20px;
+  width: 320px;
+}
+
+
+@mixin btn(){
+  padding: 12px 28px;
+  border: 0;
+  display: inline-block;
+  font-size: 20px;
+  line-height: $font-size-body + 1;
+  text-decoration: none;
+  
+  border: 1px solid #fff;
+  background-color: #bbae99;
+  color: #fff;
+  border-radius: 5px;
+
+  &:hover{
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.btn{
+
+  @include btn();
+
+}

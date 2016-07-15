@@ -82,7 +82,6 @@ describe("An input value must be valid.", function() {
 
     it("£11p", function() {
 			
-			console.log('£11p');
 			expect(coinCounter.validateInput('£11p')).toBeFalsy();
 
     });

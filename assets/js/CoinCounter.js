@@ -55,7 +55,23 @@ function CoinCounter () {
 
     convertInput : function(validInput){
 
-    	return 0;
+        // check if there is a £ - if so remove it and multiply by 100
+        if(validInput.indexOf('£') >= 0){
+            validInput = validInput.replace('£', '').replace('p', '');
+            validInput = validInput * 100;            
+        } else if(validInput.indexOf('.') >= 0) {
+        // check if there is a . - if so remove p and multiply by 100
+            validInput =  validInput.replace('p', '');
+            validInput = validInput * 100;
+        } else {
+        // it's a penny only value
+            validInput =  validInput.replace('p', '');
+            
+        }
+
+        // if it still has a '.' just change it to an integer
+        validInput = parseInt(validInput);
+    	return validInput;
 
     },
 

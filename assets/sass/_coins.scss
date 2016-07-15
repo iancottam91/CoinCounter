@@ -1,0 +1,153 @@
+@import "compass/css3";
+$experimental-support-for-svg: true;
+
+$coinSizeLarge: 80px;
+$coinSizeMedium: 60px;
+$coinSizeSmall: 50px;
+
+.coin{
+  width: $coinSizeMedium;
+  height: $coinSizeMedium;
+  display: inline-block;
+  border-radius: ($coinSizeMedium - 2);
+  box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 9;
+  margin-right: 5px;
+  text-align: center;
+  margin-bottom: 15px;
+
+  >span{
+    position: relative;
+    font-weight: bold;
+    color: #444;
+    top: 22px;
+    z-index: 20;
+  }
+
+  &:after{
+    content: "";
+    width: ($coinSizeMedium - 15);
+    height: ($coinSizeMedium - 15);
+    display: block;
+    top: 7px;
+    left: 7px;
+    position: absolute;
+    border-radius: 58px;
+    z-index: 10;
+  }
+
+  &:before{
+    content: "";
+    width: ($coinSizeMedium - 2);
+    height: ($coinSizeMedium - 2);
+    display: block;
+    position: absolute;
+    border-radius: ($coinSizeMedium - 2);
+    z-index: 9;
+  }
+}
+.coin-large{
+  width: $coinSizeLarge;
+  height: $coinSizeLarge;
+  
+  >span{
+    top: 30px;
+    font-size: 18px;
+  }
+
+  &:after{    
+    width: ($coinSizeLarge - 15);
+    height: ($coinSizeLarge - 15);
+  }
+  &:before{    
+    width: ($coinSizeLarge - 2);
+    height: ($coinSizeLarge - 2);
+    border-radius: ($coinSizeLarge - 2);
+  }
+}
+
+.coin-small{
+  width: $coinSizeSmall;
+  height: $coinSizeSmall;
+
+  >span{
+    top: ($coinSizeSmall / 3);
+    font-size: 14px;
+  }
+
+  &:after{    
+    width: ($coinSizeSmall - 15);
+    height: ($coinSizeSmall - 15);
+  }
+  &:before{    
+    width: ($coinSizeSmall - 2);
+    height: ($coinSizeSmall - 2);
+    border-radius: ($coinSizeSmall - 2);
+  }
+}
+
+$bronze1: rgba(223,182,103,1); $bronze2: rgba(249,243,232,1); $bronze3: rgba(231,192,116,1);
+$bronze4: rgb(209,156,53); $bronze5: rgb(247,230,197); $bronze6: rgb(230,184,106);
+
+
+.coin-bronze{
+  @include background-image( linear-gradient($bronze1 0%, $bronze2 56%, $bronze3 96%) );
+  @include background-image( linear-gradient(45deg, $bronze1 0%, $bronze2 56%, $bronze3 96%) );
+}
+
+.coin-bronze:before{
+  @include background-image( linear-gradient($bronze4 0%, $bronze5 50%, $bronze6 100%) );
+  @include background-image( linear-gradient(135deg, $bronze4 0%, $bronze5 50%, $bronze6 100%) );
+  border: 1px solid $bronze6;
+}
+.coin-bronze:after{  
+  @include background-image( linear-gradient($bronze1 0%, $bronze2 56%, $bronze3 96%) );
+  @include background-image( linear-gradient(135deg, $bronze1 0%, $bronze2 56%, $bronze3 96%) );
+  border: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(209,156,53,0.3);
+  border-right: 1px solid rgba(209,156,53,0.5);
+}
+
+$silver1: rgba(160,160,160,1); $silver2: rgba(232,232,232,1); $silver3: rgba(232,232,232,1);
+$silver4: rgba(181,181,181,1); $silver5: rgba(252,252,252,1);
+
+.coin-silver{
+  @include background-image( linear-gradient($silver1 0%, $silver3 56%) );
+  @include background-image( linear-gradient(45deg, $silver1 0%, $silver3 56%) );
+}
+
+.coin-silver:before{
+  @include background-image( linear-gradient($silver4 0%, $silver5 56%, $silver2 96%) );
+  @include background-image( linear-gradient(135deg, $silver4 0%, $silver5 56%, $silver2 96%) );
+  border: 1px solid $silver4;
+}
+
+.coin-silver:after{
+  @include background-image( linear-gradient($silver4 0%, $silver5 56%, $silver2 96%) );
+  @include background-image( linear-gradient(135deg, $silver4 0%, $silver5 56%, $silver2 96%) );
+  border: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(160,160,160,0.3);
+  border-right: 1px solid rgba(160,160,160,0.5);
+}
+
+$gold1: rgba(242,215,12,1); $gold2: rgba(255,255,255,1); $gold3: rgba(252,235,0,1);
+$gold4: rgb(209,156,53); $gold5: rgb(247,230,197); $gold6: rgb(230,184,106);
+
+.coin-gold{
+  @include background-image( linear-gradient($gold1 0%, $gold2 56%, $gold3 96%) );
+  @include background-image( linear-gradient(45deg, $gold1 0%, $gold2 56%, $gold3 96%) );
+}
+.coin-gold:before{
+  @include background-image( linear-gradient($gold1 0%, $gold2 56%, $gold3 96%) );
+  @include background-image( linear-gradient(135deg, $gold1 0%, $gold2 56%, $gold3 96%) );
+  border: 1px solid $gold1;
+}
+
+.coin-gold:after{
+  @include background-image( linear-gradient($gold1 0%, $gold2 56%, $gold3 96%) );
+  @include background-image( linear-gradient(135deg, $gold1 0%, $gold2 56%, $gold3 96%) );
+  border: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(242,215,12,0.3);
+  border-right: 1px solid rgba(242,215,12,0.3);
+}

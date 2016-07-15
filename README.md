@@ -29,7 +29,15 @@ functions:
 
 ## tests
 
-## UI - css coins as result?
-
 have all the UI interaction as separate JS object - need to test this too
 
+To do:
+
+- convert input function
+- build ui:
+  - coin value styles
+  - form with validaton
+  - generate count for coins needed
+
+- Make it obvious that the user has clicked Calculate
+- align the centres of the coins

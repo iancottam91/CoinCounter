@@ -49,6 +49,30 @@ describe("A valid input is provided.", function() {
       expect(coinCounter.convertInput('001.41p')).toEqual(141);
 
     });
+
+    it("xx.xx", function() {
+      
+      expect(coinCounter.convertInput('13.02')).toEqual(1302);
+
+    });
+
+    it("£x", function() {
+      
+      expect(coinCounter.convertInput('£1')).toEqual(100);
+
+    });
+
+    it("x", function() {
+      
+      expect(coinCounter.convertInput('1')).toEqual(1);
+
+    });
+
+    it("xp", function() {
+      
+      expect(coinCounter.convertInput('1p')).toEqual(1);
+
+    });
   
   });
 

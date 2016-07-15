@@ -1,0 +1,500 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 10, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 17, ../../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_typography.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 5, ../sass/_typography.scss */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* line 10, ../sass/_typography.scss */
+input[type="text"] {
+  height: 43px;
+  text-indent: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: top;
+  border: 0;
+  margin-right: 10px;
+  font-size: 20px;
+  width: 320px;
+}
+
+/* line 42, ../sass/_typography.scss */
+.btn {
+  padding: 12px 28px;
+  border: 0;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 17px;
+  text-decoration: none;
+  border: 1px solid #fff;
+  background-color: #bbae99;
+  color: #fff;
+  border-radius: 5px;
+}
+/* line 36, ../sass/_typography.scss */
+.btn:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 8, ../sass/_coins.scss */
+.coin {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border-radius: 58px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 9;
+  margin-right: 5px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+/* line 20, ../sass/_coins.scss */
+.coin > span {
+  position: relative;
+  font-weight: bold;
+  color: #444;
+  top: 22px;
+  z-index: 20;
+}
+/* line 28, ../sass/_coins.scss */
+.coin:after {
+  content: "";
+  width: 45px;
+  height: 45px;
+  display: block;
+  top: 7px;
+  left: 7px;
+  position: absolute;
+  border-radius: 58px;
+  z-index: 10;
+}
+/* line 40, ../sass/_coins.scss */
+.coin:before {
+  content: "";
+  width: 58px;
+  height: 58px;
+  display: block;
+  position: absolute;
+  border-radius: 58px;
+  z-index: 9;
+}
+
+/* line 50, ../sass/_coins.scss */
+.coin-large {
+  width: 80px;
+  height: 80px;
+}
+/* line 54, ../sass/_coins.scss */
+.coin-large > span {
+  top: 30px;
+  font-size: 18px;
+}
+/* line 59, ../sass/_coins.scss */
+.coin-large:after {
+  width: 65px;
+  height: 65px;
+}
+/* line 63, ../sass/_coins.scss */
+.coin-large:before {
+  width: 78px;
+  height: 78px;
+  border-radius: 78px;
+}
+
+/* line 70, ../sass/_coins.scss */
+.coin-small {
+  width: 50px;
+  height: 50px;
+}
+/* line 74, ../sass/_coins.scss */
+.coin-small > span {
+  top: 16.66666667px;
+  font-size: 14px;
+}
+/* line 79, ../sass/_coins.scss */
+.coin-small:after {
+  width: 35px;
+  height: 35px;
+}
+/* line 83, ../sass/_coins.scss */
+.coin-small:before {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+}
+
+/* line 94, ../sass/_coins.scss */
+.coin-bronze {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RmYjY2NyIvPjxzdG9wIG9mZnNldD0iNTYlIiBzdG9wLWNvbG9yPSIjZjlmM2U4Ii8+PHN0b3Agb2Zmc2V0PSI5NiUiIHN0b3AtY29sb3I9IiNlN2MwNzQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dfb667), color-stop(56%, #f9f3e8), color-stop(96%, #e7c074));
+  background-image: -webkit-linear-gradient(#dfb667 0%, #f9f3e8 56%, #e7c074 96%);
+  background-image: -moz-linear-gradient(#dfb667 0%, #f9f3e8 56%, #e7c074 96%);
+  background-image: -o-linear-gradient(#dfb667 0%, #f9f3e8 56%, #e7c074 96%);
+  background-image: linear-gradient(#dfb667 0%, #f9f3e8 56%, #e7c074 96%);
+  background-image: -webkit-linear-gradient(45deg, #dfb667 0%, #f9f3e8 56%, #e7c074 96%);
+  background-image: -moz-linear-gradient(45deg, #dfb667 0%, #f9f3e8 56%, #e7c074 96%);
+  background-image: -o-linear-gradient(45deg, #dfb667 0%, #f9f3e8 56%, #e7c074 96%);
+  background-image: linear-gradient(45deg, #dfb667 0%, #f9f3e8 56%, #e7c074 96%);
+}
+
+/* line 99, ../sass/_coins.scss */
+.coin-bronze:before {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2QxOWMzNSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZjdlNmM1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZTZiODZhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d19c35), color-stop(50%, #f7e6c5), color-stop(100%, #e6b86a));
+  background-image: -webkit-linear-gradient(#d19c35 0%, #f7e6c5 50%, #e6b86a 100%);
+  background-image: -moz-linear-gradient(#d19c35 0%, #f7e6c5 50%, #e6b86a 100%);
+  background-image: -o-linear-gradient(#d19c35 0%, #f7e6c5 50%, #e6b86a 100%);
+  background-image: linear-gradient(#d19c35 0%, #f7e6c5 50%, #e6b86a 100%);
+  background-image: -webkit-linear-gradient(135deg, #d19c35 0%, #f7e6c5 50%, #e6b86a 100%);
+  background-image: -moz-linear-gradient(135deg, #d19c35 0%, #f7e6c5 50%, #e6b86a 100%);
+  background-image: -o-linear-gradient(135deg, #d19c35 0%, #f7e6c5 50%, #e6b86a 100%);
+  background-image: linear-gradient(135deg, #d19c35 0%, #f7e6c5 50%, #e6b86a 100%);
+  border: 1px solid #e6b86a;
+}
+
+/* line 104, ../sass/_coins.scss */
+.coin-bronze:after {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RmYjY2NyIvPjxzdG9wIG9mZnNldD0iNTYlIiBzdG9wLWNvbG9yPSIjZjlmM2U4Ii8+PHN0b3Agb2Zmc2V0PSI5NiUiIHN0b3AtY29sb3I9IiNlN2MwNzQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dfb667), color-stop(56%, #f9f3e8), color-stop(96%, #e7c074));
+  background-image: -webkit-linear-gradient(#dfb667 0%, #f9f3e8 56%, #e7c074 96%);
+  background-image: -moz-linear-gradient(#dfb667 0%, #f9f3e8 56%, #e7c074 96%);
+  background-image: -o-linear-gradient(#dfb667 0%, #f9f3e8 56%, #e7c074 96%);
+  background-image: linear-gradient(#dfb667 0%, #f9f3e8 56%, #e7c074 96%);
+  background-image: -webkit-linear-gradient(135deg, #dfb667 0%, #f9f3e8 56%, #e7c074 96%);
+  background-image: -moz-linear-gradient(135deg, #dfb667 0%, #f9f3e8 56%, #e7c074 96%);
+  background-image: -o-linear-gradient(135deg, #dfb667 0%, #f9f3e8 56%, #e7c074 96%);
+  background-image: linear-gradient(135deg, #dfb667 0%, #f9f3e8 56%, #e7c074 96%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(209, 156, 53, 0.3);
+  border-right: 1px solid rgba(209, 156, 53, 0.5);
+}
+
+/* line 115, ../sass/_coins.scss */
+.coin-silver {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2EwYTBhMCIvPjxzdG9wIG9mZnNldD0iNTYlIiBzdG9wLWNvbG9yPSIjZThlOGU4Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a0a0a0), color-stop(56%, #e8e8e8));
+  background-image: -webkit-linear-gradient(#a0a0a0 0%, #e8e8e8 56%);
+  background-image: -moz-linear-gradient(#a0a0a0 0%, #e8e8e8 56%);
+  background-image: -o-linear-gradient(#a0a0a0 0%, #e8e8e8 56%);
+  background-image: linear-gradient(#a0a0a0 0%, #e8e8e8 56%);
+  background-image: -webkit-linear-gradient(45deg, #a0a0a0 0%, #e8e8e8 56%);
+  background-image: -moz-linear-gradient(45deg, #a0a0a0 0%, #e8e8e8 56%);
+  background-image: -o-linear-gradient(45deg, #a0a0a0 0%, #e8e8e8 56%);
+  background-image: linear-gradient(45deg, #a0a0a0 0%, #e8e8e8 56%);
+}
+
+/* line 120, ../sass/_coins.scss */
+.coin-silver:before {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2I1YjViNSIvPjxzdG9wIG9mZnNldD0iNTYlIiBzdG9wLWNvbG9yPSIjZmNmY2ZjIi8+PHN0b3Agb2Zmc2V0PSI5NiUiIHN0b3AtY29sb3I9IiNlOGU4ZTgiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b5b5b5), color-stop(56%, #fcfcfc), color-stop(96%, #e8e8e8));
+  background-image: -webkit-linear-gradient(#b5b5b5 0%, #fcfcfc 56%, #e8e8e8 96%);
+  background-image: -moz-linear-gradient(#b5b5b5 0%, #fcfcfc 56%, #e8e8e8 96%);
+  background-image: -o-linear-gradient(#b5b5b5 0%, #fcfcfc 56%, #e8e8e8 96%);
+  background-image: linear-gradient(#b5b5b5 0%, #fcfcfc 56%, #e8e8e8 96%);
+  background-image: -webkit-linear-gradient(135deg, #b5b5b5 0%, #fcfcfc 56%, #e8e8e8 96%);
+  background-image: -moz-linear-gradient(135deg, #b5b5b5 0%, #fcfcfc 56%, #e8e8e8 96%);
+  background-image: -o-linear-gradient(135deg, #b5b5b5 0%, #fcfcfc 56%, #e8e8e8 96%);
+  background-image: linear-gradient(135deg, #b5b5b5 0%, #fcfcfc 56%, #e8e8e8 96%);
+  border: 1px solid #b5b5b5;
+}
+
+/* line 126, ../sass/_coins.scss */
+.coin-silver:after {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2I1YjViNSIvPjxzdG9wIG9mZnNldD0iNTYlIiBzdG9wLWNvbG9yPSIjZmNmY2ZjIi8+PHN0b3Agb2Zmc2V0PSI5NiUiIHN0b3AtY29sb3I9IiNlOGU4ZTgiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b5b5b5), color-stop(56%, #fcfcfc), color-stop(96%, #e8e8e8));
+  background-image: -webkit-linear-gradient(#b5b5b5 0%, #fcfcfc 56%, #e8e8e8 96%);
+  background-image: -moz-linear-gradient(#b5b5b5 0%, #fcfcfc 56%, #e8e8e8 96%);
+  background-image: -o-linear-gradient(#b5b5b5 0%, #fcfcfc 56%, #e8e8e8 96%);
+  background-image: linear-gradient(#b5b5b5 0%, #fcfcfc 56%, #e8e8e8 96%);
+  background-image: -webkit-linear-gradient(135deg, #b5b5b5 0%, #fcfcfc 56%, #e8e8e8 96%);
+  background-image: -moz-linear-gradient(135deg, #b5b5b5 0%, #fcfcfc 56%, #e8e8e8 96%);
+  background-image: -o-linear-gradient(135deg, #b5b5b5 0%, #fcfcfc 56%, #e8e8e8 96%);
+  background-image: linear-gradient(135deg, #b5b5b5 0%, #fcfcfc 56%, #e8e8e8 96%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(160, 160, 160, 0.3);
+  border-right: 1px solid rgba(160, 160, 160, 0.5);
+}
+
+/* line 137, ../sass/_coins.scss */
+.coin-gold {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyZDcwYyIvPjxzdG9wIG9mZnNldD0iNTYlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI5NiUiIHN0b3AtY29sb3I9IiNmY2ViMDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2d70c), color-stop(56%, #ffffff), color-stop(96%, #fceb00));
+  background-image: -webkit-linear-gradient(#f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: -moz-linear-gradient(#f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: -o-linear-gradient(#f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: linear-gradient(#f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: -webkit-linear-gradient(45deg, #f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: -moz-linear-gradient(45deg, #f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: -o-linear-gradient(45deg, #f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: linear-gradient(45deg, #f2d70c 0%, #ffffff 56%, #fceb00 96%);
+}
+
+/* line 141, ../sass/_coins.scss */
+.coin-gold:before {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyZDcwYyIvPjxzdG9wIG9mZnNldD0iNTYlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI5NiUiIHN0b3AtY29sb3I9IiNmY2ViMDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2d70c), color-stop(56%, #ffffff), color-stop(96%, #fceb00));
+  background-image: -webkit-linear-gradient(#f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: -moz-linear-gradient(#f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: -o-linear-gradient(#f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: linear-gradient(#f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: -webkit-linear-gradient(135deg, #f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: -moz-linear-gradient(135deg, #f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: -o-linear-gradient(135deg, #f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: linear-gradient(135deg, #f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  border: 1px solid #f2d70c;
+}
+
+/* line 147, ../sass/_coins.scss */
+.coin-gold:after {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyZDcwYyIvPjxzdG9wIG9mZnNldD0iNTYlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI5NiUiIHN0b3AtY29sb3I9IiNmY2ViMDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2d70c), color-stop(56%, #ffffff), color-stop(96%, #fceb00));
+  background-image: -webkit-linear-gradient(#f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: -moz-linear-gradient(#f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: -o-linear-gradient(#f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: linear-gradient(#f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: -webkit-linear-gradient(135deg, #f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: -moz-linear-gradient(135deg, #f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: -o-linear-gradient(135deg, #f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  background-image: linear-gradient(135deg, #f2d70c 0%, #ffffff 56%, #fceb00 96%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(242, 215, 12, 0.3);
+  border-right: 1px solid rgba(242, 215, 12, 0.3);
+}
+
+/* line 3, ../sass/_framework.scss */
+.container {
+  background: none;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 11, ../sass/_framework.scss */
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+
+/* line 16, ../sass/_framework.scss */
+.container:after {
+  clear: both;
+}
+
+/* line 20, ../sass/_framework.scss */
+.centered-container {
+  text-align: center;
+}
+
+/* line 23, ../sass/_framework.scss */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* line 28, ../sass/_framework.scss */
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+/* line 33, ../sass/_framework.scss */
+.row:after {
+  clear: both;
+}
+
+/* line 37, ../sass/_framework.scss */
+.col-sm-4 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  /* line 46, ../sass/_framework.scss */
+  .container {
+    width: 750px;
+  }
+}
+/* line 23, ../sass/screen.scss */
+body {
+  background: #ddd;
+}
+
+/* line 27, ../sass/screen.scss */
+.interact {
+  background: #6d595f;
+  padding: 60px 80px 60px;
+}
+/* line 30, ../sass/screen.scss */
+.interact h1 {
+  color: white;
+  text-align: center;
+}
+/* line 33, ../sass/screen.scss */
+.interact h1 span {
+  padding: 20px 30px;
+  line-height: 36px;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* line 43, ../sass/screen.scss */
+.hidden {
+  display: none;
+}
+
+/* line 47, ../sass/screen.scss */
+#calculate-coins-form, #input-error {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* line 52, ../sass/screen.scss */
+#coin-containers {
+  margin-top: 40px;
+}
+/* line 54, ../sass/screen.scss */
+#coin-containers > div {
+  height: 100px;
+  text-align: center;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  /* line 54, ../sass/screen.scss */
+  #coin-containers > div {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 54, ../sass/screen.scss */
+  #coin-containers > div {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+
+/* line 62, ../sass/screen.scss */
+.coin-details {
+  display: inline-block;
+  font-size: 30px;
+  vertical-align: bottom;
+  margin-bottom: 34px;
+  margin-left: 23px;
+}
+
+/* line 69, ../sass/screen.scss */
+.coin-details-large {
+  margin-bottom: 44px;
+  margin-left: 5px;
+}
+
+/* line 73, ../sass/screen.scss */
+.coin-details-small {
+  margin-bottom: 26px;
+  margin-left: 34px;
+}
+
+/* line 77, ../sass/screen.scss */
+#input-error {
+  color: #ffe100;
+}

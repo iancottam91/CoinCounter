@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sterling Coins Calculator</title>
+  
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,300italic,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="assets/css/screen.css">
+
+  <script type="text/javascript" src="assets/js/CoinCounter.js"></script>
+</head>
+<body>
+  <div class="">
+    <div class="interact">      
+      <h1>
+        <span>Sterling Coins Calculator</span>
+      </h1>
+      <div>
+        <form id="calculate-coins-form">
+          <input id="coin-value" placeholder="Enter a monetary value" type="text">
+          <button class="btn">Calculate</button>
+        </form>
+        <p class="hidden" id="input-error">Please enter a valid value</p>
+      </div>
+    </div>
+    <div class="">
+      <div class="container">
+        <div id="coin-containers" class="row">      
+          <div id="two-pound">      
+            <div class="coin coin-gold coin-large"><span>£2</span></div>
+            <div class="coin-details coin-details-large">          
+              <span class="needed">:</span>
+              <span class="needed-count" id="two-pound-count">0</span>
+            </div>
+          </div>
+          <div id="one-pound"> 
+            <div class="coin coin-gold"><span>£1</span></div>
+            <div class="coin-details">          
+              <span class="needed">:</span>
+              <span class="needed-count" id="one-pound-count">0</span>
+            </div>
+          </div>
+          <div id="fifty-pence"> 
+            <div class="coin coin-silver coin-large"><span>50p</span></div>
+            <div class="coin-details coin-details-large">          
+              <span class="needed">:</span>
+              <span class="needed-count" id="fifty-pence-count">0</span>
+            </div>
+          </div>
+          <div id="twenty-pence"> 
+            <div class="coin coin-silver"><span>20p</span></div>
+            <div class="coin-details">          
+              <span class="needed">:</span>
+              <span class="needed-count" id="twenty-pence-count">0</span>
+            </div>
+          </div>
+          <div id="ten-pence"> 
+            <div class="coin coin-silver"><span>10p</span></div>
+            <div class="coin-details">          
+              <span class="needed">:</span>
+              <span class="needed-count" id="ten-pence-count">0</span>
+            </div>
+          </div>
+          <div id="five-pence"> 
+            <div class="coin coin-silver coin-small"><span>5p</span></div>
+            <div class="coin-details coin-details-small">          
+              <span class="needed">:</span>
+              <span class="needed-count" id="five-pence-count">0</span>
+            </div>
+          </div>
+          <div id="two-pence"> 
+            <div class="coin coin-bronze coin-large"><span>2p</span></div>
+            <div class="coin-details coin-details-large">          
+              <span class="needed">:</span>
+              <span class="needed-count" id="two-pence-count">0</span>
+            </div>
+          </div>
+          <div id="one-pence"> 
+            <div class="coin coin-bronze coin-small"><span>1p</span></div>
+            <div class="coin-details coin-details-small">          
+              <span class="needed">:</span>
+              <span class="needed-count" id="one-pence-count">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+    // interactions
+    function processForm(e) {
+      if (e.preventDefault) e.preventDefault();
+
+      var input = document.getElementById('coin-value').value;
+      console.log(input);
+          
+      // return false to stop default form submission
+      return false;
+    }
+
+    var form = document.getElementById('calculate-coins-form');
+    form.addEventListener("submit", processForm);
+
+  </script>
+  
+</body>
+</html>
