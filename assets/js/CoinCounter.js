@@ -80,6 +80,9 @@ function CoinCounter () {
     	var coinValueIndex = 0;
     	var pennyValueLocal = pennyValue;
 
+        // reset array
+        coinCountArr = [0,0,0,0,0,0,0,0];
+
     	function checkNumberOfCoins(pennyValue, coinIndex){
 
     		while ( pennyValueLocal >= coinValues[coinIndex] && pennyValueLocal !== 0) {
@@ -96,6 +99,20 @@ function CoinCounter () {
 
 
     	return coinCountArr;
+
+    },
+
+    // add all the values in a number array and return them
+    sumArray : function(array){
+
+        var sum = 0;
+
+        sum = array.reduce(function(previousValue, currentValue, currentIndex, array) {
+            return previousValue + currentValue;
+        });
+
+
+        return sum;
 
     },
 

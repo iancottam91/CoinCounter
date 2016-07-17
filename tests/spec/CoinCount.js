@@ -148,5 +148,12 @@ describe("A valid input is provided.", function() {
   
   });
 
+  it("can all the values in an array", function(){
+
+    var result = [19, 1, 1, 0, 0, 0, 0, 1];
+    expect( coinCounter.sumArray(result) ).toBe(22);
+
+  });
+
 
 });

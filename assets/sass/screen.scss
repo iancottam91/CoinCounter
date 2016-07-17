@@ -6,6 +6,8 @@
 $h1-font-size: 36px;
 $font-size-body: 16px;
 $font-color: #202020;
+$error-color: #ffd706;
+$bg-color: #6d595f;
 
 *{
   box-sizing: border-box;
@@ -25,7 +27,7 @@ body{
 }
 
 .interact{
-  background: #6d595f;
+  background: $bg-color;
   padding: 60px 80px 60px;
   h1{
     color: white;
@@ -75,5 +77,15 @@ body{
   margin-left: 34px;
 }
 #input-error{
-  color: #ffe100;
+  color: $error-color;
 }
+#input-success{
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+  strong{
+    font-size: 20px;
+  }
+}
+
+
