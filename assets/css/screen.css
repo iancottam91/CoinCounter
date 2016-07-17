@@ -434,7 +434,6 @@ body {
 
 /* line 49, ../sass/screen.scss */
 #calculate-coins-form, #input-error {
-  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -494,15 +493,21 @@ body {
 /* line 79, ../sass/screen.scss */
 #input-error {
   color: #ffd706;
+  margin-bottom: 15px;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 #input-success {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
   color: white;
 }
-/* line 86, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 #input-success strong {
   font-size: 20px;
+}
+
+/* line 91, ../sass/screen.scss */
+#coin-value {
+  margin-bottom: 20px;
 }

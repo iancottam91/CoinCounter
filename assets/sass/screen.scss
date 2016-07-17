@@ -47,9 +47,9 @@ body{
 }
 
 #calculate-coins-form, #input-error{
-  margin-bottom: 15px;
   text-align: center;
 }
+
 
 #coin-containers{
   margin-top: 40px;
@@ -78,14 +78,18 @@ body{
 }
 #input-error{
   color: $error-color;
+  margin-bottom: 15px;
 }
 #input-success{
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
   color: white;
   strong{
     font-size: 20px;
   }
+}
+#coin-value{
+  margin-bottom: 20px;
 }
 
 
