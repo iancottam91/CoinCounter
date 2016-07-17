@@ -397,16 +397,8 @@ input[type="text"] {
   clear: both;
 }
 
-/* line 37, ../sass/_framework.scss */
-.col-sm-4 {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 @media (min-width: 768px) {
-  /* line 46, ../sass/_framework.scss */
+  /* line 39, ../sass/_framework.scss */
   .container {
     width: 750px;
   }

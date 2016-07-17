@@ -5,7 +5,7 @@ function Interactions (coinCounter) {
 
 	return {
 
-		// get value from URL and use that 
+		// get value from URL and work out how many coins are needed to make that value
 		readUrlValue : function(urlQuery){
 
 			var interactions = this;
@@ -13,8 +13,8 @@ function Interactions (coinCounter) {
 			var uri = decodeURI(urlQuery);
 			if(uri !== ""){
 
+				// this could be improved to support multiple query strings if needed
 				var input = uri.split('?value=')[1];
-				console.log(input);
 
 				var valid = coinCounter.validateInput(input);
 	      var result;
@@ -34,6 +34,7 @@ function Interactions (coinCounter) {
 
 		},
 
+		// controll what the form submit does
     handleFormSubmit : function(){
 
     	var interactions = this;
@@ -65,6 +66,7 @@ function Interactions (coinCounter) {
 
     },
 
+    // show the error message
     showErrorMessage : function(){
 
     	document.getElementById('input-error').className = '';
@@ -73,12 +75,14 @@ function Interactions (coinCounter) {
 
     },
 
+    // show the results
     showResults: function(){
     	document.getElementById('input-error').className = 'hidden';
     	document.getElementById('input-success').className = '';
     	document.getElementById('coin-results').className = '';
     },
 
+    // show full results for each coin
     populateResults: function(result, input){
 
     	document.getElementById('amount-entered').textContent = input;
@@ -95,6 +99,7 @@ function Interactions (coinCounter) {
 
     },
 
+    // wrapper for location.search which allows testing
     redirect : function(destination) {
       location.search = destination;
     }

@@ -16,6 +16,7 @@ function CoinCounter () {
 
   return {
 
+    // take a user input and check if it is valid
     validateInput : function(input){
 
     	var valid;
@@ -53,6 +54,7 @@ function CoinCounter () {
 
     },
 
+    // convert a valid user input into a penny value
     convertInput : function(validInput){
 
         // check if there is a £ - if so remove it and multiply by 100
@@ -75,6 +77,7 @@ function CoinCounter () {
 
     },
 
+    // work out how many coins are needed to make up the value, using the least possible coins
     calculateNumberOfCoins : function(pennyValue){
 
     	var coinValueIndex = 0;
