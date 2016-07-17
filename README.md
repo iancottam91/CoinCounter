@@ -3,9 +3,10 @@
 ## Build instructions
 
 - Clone the code
-- Open a terminal at the project root directory
-- run npm install
-- run sudo node index.js
+- Open a terminal/cmd prompt at the project root directory
+- run 'npm install'
+- run 'sudo node index.js' (on windows run 'node index.js')
+- view http://localhost
 
 This will run the app on port 80. Make sure you have nothing else running on port 80!
 
@@ -21,7 +22,7 @@ Alternatively you can change the port number used in index.js
 
 - The tests should be run using google chrome
 - This application will run best on google chrome.
-- The application will also run on firefox, IE9+ or mobile browsers.
+- The application will also run on firefox, safari, IE9+ or mobile browsers.
 
 ## Technical Summary:
 
