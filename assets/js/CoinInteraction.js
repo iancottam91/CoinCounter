@@ -5,7 +5,34 @@ function Interactions (coinCounter) {
 
 	return {
 
-		// intercept form submti and handle it with JS
+		// get value from URL and use that 
+		readUrlValue : function(urlQuery){
+
+			var interactions = this;
+
+			var uri = decodeURI(urlQuery);
+			if(uri !== ""){
+
+				var input = uri.split('?value=')[1];
+				console.log(input);
+
+				var valid = coinCounter.validateInput(input);
+	      var result;
+
+				if(valid){
+					// populate results
+					result = coinCounter.calculateNumberOfCoins( coinCounter.convertInput(input) );
+					interactions.populateResults(result, input);
+					// show results
+					interactions.showResults();
+				} else {
+					// show error
+					interactions.showErrorMessage();
+				}
+
+			}
+
+		},
 
     handleFormSubmit : function(){
 
@@ -19,18 +46,10 @@ function Interactions (coinCounter) {
 	      var valid = coinCounter.validateInput(input);
 	      var result;
 
-				console.log(input);
-				console.log(valid);
-
 				if(valid){
 					// populate results
-					result = coinCounter.calculateNumberOfCoins( coinCounter.convertInput(input) );
-					interactions.populateResults(result, input);
+					interactions.redirect('value=' + input);
 
-					console.log(result);
-					// console.log(resultObj);
-					// show results
-					interactions.showResults();
 				} else {
 					// show error
 					interactions.showErrorMessage();
@@ -74,6 +93,10 @@ function Interactions (coinCounter) {
     	document.getElementById('two-pence-count').textContent = result[6];
     	document.getElementById('one-pence-count').textContent = result[7];
 
+    },
+
+    redirect : function(destination) {
+      location.search = destination;
     }
 
   }

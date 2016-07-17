@@ -21,7 +21,7 @@
           <input id="coin-value" placeholder="Enter a monetary value" type="text">
           <button id="form-btn" class="btn">Calculate</button>
         </form>
-        <p class="hidden" id="input-error">Please enter a valid value</p>
+        <p class="hidden" id="input-error">Please enter a valid input value. For example '£10.00p' or '125p'</p>
         <p class="hidden" id="input-success">The minimum number of coins required to make <strong id="amount-entered"></strong> is <strong id="min-coins-needed"></strong>. See below for the denominations required.</p>
       </div>
     </div>
@@ -93,6 +93,7 @@
     var coinCounter = CoinCounter();
     var interactions = Interactions(coinCounter);
     interactions.handleFormSubmit();
+    interactions.readUrlValue( location.search );
 
   </script>
   

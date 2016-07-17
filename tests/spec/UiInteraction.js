@@ -5,11 +5,6 @@ describe("User Interactions:", function() {
   var coinCounter = CoinCounter();
   var interactions = Interactions(coinCounter);
 
-  // beforeEach("", function(){
-
-  // });
-
-
   it("Intercept form submit and call relevant functions.", function() {
 
     loadFixtures('index.html');
@@ -27,6 +22,7 @@ describe("User Interactions:", function() {
   });
 
 
+  // test when handleFormSubmit is called and valid = false
   it("Display error message when an invalid input is provided.", function() {
 
     loadFixtures('index.html');
@@ -41,12 +37,29 @@ describe("User Interactions:", function() {
 
   });
 
-  it("Display results when a valid input is provided.", function() {
+  // test when handleFormSubmit is called and valid = true
+  it("Sets location.search if the value is valid.", function() {
 
     loadFixtures('index.html');
     interactions.handleFormSubmit();
+    spyOn(interactions, 'redirect');
+
     $("#coin-value").val('£39.51');
     $("#form-btn").click();
+
+    expect(interactions.redirect).toHaveBeenCalled();
+    // perhaps spy on location.search
+
+
+  });
+
+
+  it("Display results when a valid input is provided.", function() {
+
+    loadFixtures('index.html');
+    interactions.readUrlValue('?value=£39.51');
+
+    // load fixture with ?value=£39.51
 
     // expect error message to be shon
     expect($("#input-error")).toHaveClass('hidden');
@@ -59,9 +72,10 @@ describe("User Interactions:", function() {
   it("Populate results when a valid input is provided.", function() {
 
     loadFixtures('index.html');
-    interactions.handleFormSubmit();
-    $("#coin-value").val('£39.51');
-    $("#form-btn").click();
+    interactions.readUrlValue('?value=£39.51');
+
+    // load fixture with ?value=£39.51
+
 
     // expect error message to be shown
     expect($("#amount-entered").text()).toBe('£39.51');

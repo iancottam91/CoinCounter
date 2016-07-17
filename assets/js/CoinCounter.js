@@ -114,21 +114,6 @@ function CoinCounter () {
 
         return sum;
 
-    },
-
-    convertCoinCountArrToObj: function(coinCountArray){
-
-    	coinObj.twopound = coinCountArray[0];
-    	coinObj.onepound = coinCountArray[1];
-    	coinObj.fiftyp = coinCountArray[2];
-    	coinObj.twentyp = coinCountArray[3];
-    	coinObj.tenp = coinCountArray[4];
-    	coinObj.fivep = coinCountArray[5];
-    	coinObj.twop = coinCountArray[6];
-    	coinObj.onep = coinCountArray[7];
-
-    	return coinObj;
-
     }
 
 
